@@ -1,0 +1,26 @@
+.tabbar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.4rem;
+    background-color: rgb(16, 16, 16);
+    row-gap: 2px;
+}
+
+.tabbar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 250ms ease-in;
+}
+
+.tabbar span {
+    font-size: 1.5rem
+}
+
+.tabbar a:hover {
+    color:rgb(51, 51, 150)
+}
+
