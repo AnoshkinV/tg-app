@@ -6,6 +6,8 @@ const Taskbar = () => {
     <div className='tasks inner-width'>
         <div className='task-item'>
             <span>task 1</span><button>join</button>
+            <span>task 1</span><button>join</button>
+            <span>task 1</span><button>join</button>
         </div>
     </div>
   )
