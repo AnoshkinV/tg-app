@@ -9,18 +9,19 @@
     row-gap: 2px;
 }
 
-.tabbar a {
+.tabbar button {
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: all 250ms ease-in;
+    color: inherit;
+    background: inherit;
+    border: none;
+    font-size: 18px;
 }
 
-.tabbar span {
-    font-size: 1.5rem
-}
 
-.tabbar a:hover {
+.tabbar button:hover {
     color:rgb(51, 51, 150)
 }
 
