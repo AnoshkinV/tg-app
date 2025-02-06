@@ -7,8 +7,8 @@
   }
 
 body {
-    background-color: rgb(28, 25, 25);
-    color: rgb(207, 207, 207)
+    background-color: #0F141E;
+    color: #FFFFFF
 }
 
 
@@ -16,12 +16,6 @@ body {
     width: 100%;
   }
 
-  @media (min-width: 1536px) {
-    .inner-width {
-      max-width: 730px;
-      margin: auto;
-    }
-  }
 
   .flex-center {
     display: flex;
@@ -31,3 +25,11 @@ body {
     flex-wrap: wrap;
   }
   
+  .btn {
+    background-color: #2979FF;
+    border: none;
+    color: #ffffff;
+    border-radius: 8px;
+    align-items: center;
+  }
+

@@ -1,13 +1,13 @@
 import React, { lazy, Suspense } from 'react';
-import Tabbar from './components/Tabbar/Tabbar';
+import Tabbar from './modules/tabbar/Tabbar';
 import { screenStore, } from './store/ScreenStore';
 import { observer } from 'mobx-react-lite';
 
 const screens = {
-  home: lazy(() => import("./components/Home/Home")),
-  taskbar: lazy(() => import("./components/Taskbar/Taskbar")),
-  friends: lazy(() => import("./components/Friends/Friends")),
-  wallet: lazy(() => import("./components/Wallet/Wallet")),
+  home: lazy(() => import("./modules/home/HomeScreen")),
+  taskbar: lazy(() => import("./modules/tasks/TaskScreen")),
+  friends: lazy(() => import("./modules/friends/FriendsScreen")),
+  wallet: lazy(() => import("./modules/wallet/Wallet")),
 };
 
 const App = observer(() => {

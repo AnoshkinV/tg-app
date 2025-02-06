@@ -1,6 +1,5 @@
 import { makeAutoObservable } from "mobx";
 
-
 export type ScreenType = "home" | "taskbar" | "friends" | "wallet";
 
 export type Route = {
@@ -25,13 +24,13 @@ class ScreenStore {
         this.history.push(route);
     }
 
-    goOnce(route: Route) {
-        this.onceRoute = route;
-    }
+    // goOnce(route: Route) {
+    //     this.onceRoute = route;
+    // }
 
-    restoreHistory() {
-        this.history = [{type: "home"}];
-    }
+    // restoreHistory() {
+    //     this.history = [{type: "home"}];
+    // }
 
     back() {
         if(this.onceRoute) {
