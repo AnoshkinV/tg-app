@@ -15,9 +15,11 @@ const App = observer(() => {
 
   return (
     <div className='App flex-center'>
-      <Suspense fallback={<div>Loading...</div>}>
-        <ScreenComponent />
-      </Suspense>
+      <div className='content'>
+        <Suspense fallback={<div>Loading...</div>}>
+          <ScreenComponent />
+        </Suspense>
+      </div>
       <Tabbar />
     </div>
   );

@@ -24,7 +24,9 @@ const taskActions: Record<string, (id: number) => JSX.Element | null> = {
 
 const TaskList = observer(() => {
     return (
-        <div>{
+        <div>
+            <h3>Main steps</h3>
+            {
             taskStore.tasks.map(task =>
                 <div className='task-item' key={task.id}>
                     <div className='task-content'>
