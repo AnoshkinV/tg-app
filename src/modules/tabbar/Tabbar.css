@@ -24,7 +24,7 @@
 }
 
 
-.tabbar button:hover {
+.tabbar button.active-tab {
     color:rgb(255, 255, 255);
     opacity: 100%;
 }

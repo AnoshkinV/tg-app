@@ -1,0 +1,89 @@
+.home-bg {
+    background-image: url(/public/assets/images/bg.png) ;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* position: absolute; */
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.h-container {
+    position: relative;
+    text-align: center;
+    top: -10%;
+    
+}
+
+.header {
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header h2 {
+    letter-spacing: 3px;
+}
+
+.h-btn {
+    width: 40px;    
+    height: 40px;
+    background-color: rgba(182, 182, 182, 0.3);
+    border-radius: 8px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.rounded {
+    border-radius: 100%;
+}
+
+.balance-info {
+    margin: 25px 0;
+    flex-direction: column;
+
+}
+
+.balance-info h1 {
+    font-size: 29px;
+}
+
+.balance-info p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btc-btn {
+    margin-top: 20px;
+    position: relative;
+}
+
+.energy-bar {
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 13%;
+}
+
+.progress-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    height: 6px;
+    margin: 10px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.progress-bar {
+    width: 25%;
+    height: 100%;
+    background: #ffcc00;
+}
+

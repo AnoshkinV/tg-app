@@ -1,0 +1,52 @@
+.wallet-header {
+    margin: 25px 0;
+    flex-direction: column;
+    gap: 0;
+}
+
+.wallet-header h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.w-balance p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.w-balance span {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.w-balance {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.w-address {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.w-body {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lang {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.lang span {
+    font-weight: 600;
+}
+
+.lang-btn {
+    background-color: inherit;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+}

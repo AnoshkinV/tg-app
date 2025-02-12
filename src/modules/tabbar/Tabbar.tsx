@@ -27,6 +27,7 @@ const Tabbar = observer(() => {
             {tabs.map(({ type, label, icon }) =>
                 <button
                     key={type}
+                    className={screenStore.screen.type === type ? "active-tab" : ""}
                     onClick={() => screenStore.go({ type: type })}
                 >
                     {icon}

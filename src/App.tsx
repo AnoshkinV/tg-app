@@ -14,8 +14,8 @@ const App = observer(() => {
   const ScreenComponent = screens[screenStore.screen.type];
 
   return (
-    <div className='App flex-center'>
-      <div className='content'>
+    <div className='App '>
+      <div className='content inner-width flex-center'>
         <Suspense fallback={<div>Loading...</div>}>
           <ScreenComponent />
         </Suspense>
