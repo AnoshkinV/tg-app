@@ -4,15 +4,14 @@
     background-position: center;
     background-size: cover;
     /* position: absolute; */
-    height: 100vh;
+    height: calc(100vh - 90px);
     width: 100%;
-    overflow: hidden;
 }
 
 .h-container {
     position: relative;
     text-align: center;
-    top: -10%;
+    top: -12%;
     
 }
 
