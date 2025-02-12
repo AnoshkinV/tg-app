@@ -57,7 +57,14 @@
 
 .btc-btn {
     margin-top: 20px;
+    border-radius: 50%;
     position: relative;
+    transform: scale(1);
+    transition: ease-in-out 25ms;
+}
+
+.btc-btn-pressed {
+    transform: scale(0.95);
 }
 
 .energy-bar {

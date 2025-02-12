@@ -1,8 +1,12 @@
 import { observer } from 'mobx-react-lite'
-import React from 'react'
+import React, { useState } from 'react'
 import "./HomeScreen.css"
+import { homeStore } from './HomeStore'
 
 const Home = observer(() => {
+
+  const [isPressed, setIsPressed] = useState(false);
+
   return (
     <div className='flex-center home-bg'>
       <div className='h-container inner-width m-side'>
@@ -13,9 +17,14 @@ const Home = observer(() => {
         </div>
         <div className="flex-center balance-info">
           <p>Your balance</p>
-          <h1>0 SATS</h1>
+          <h1>{homeStore.count} SATS</h1>
         </div>
-        <div className='flex-center btc-btn'>
+        <div
+          onClick={() => homeStore.incrementCount()}
+          onTouchStart={() => setIsPressed(true)}
+          onTouchEnd={() => setIsPressed(false)}
+          className={`flex-center btc-btn ${isPressed ? "btc-btn-pressed" : "btc-btn"}`}
+        >
           <img src='/assets/images/coin.png' alt='coin.png' />
         </div>
         <div className='energy-bar'>
